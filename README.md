@@ -53,7 +53,14 @@ Key functionalities include:
 
 ### Data Management
 
-All mock data used in the application, including user information and articles, is stored in JSON files located in the `public` folder. This setup mimics backend data delivery, allowing the frontend to fetch and process data as if it were interacting with a real server.
+- All mock data used in the application, including user information and articles, is stored in JSON files located in the `public` folder. This setup mimics backend data delivery, allowing the frontend to fetch and process data as if it were interacting with a real server.
+
+## **Note**
+
+Please be aware that due to the use of simulated data and Vuex to simulate login status, **refreshing the page while previewing the project may result in partial data loss**, such as registered user information. For the best preview experience, try to avoid refreshing the page.
+
+If you need to develop or test locally and wish to retain data even after a page refresh, consider implementing local storage functionality within the project, such as using LocalStorage or SessionStorage.
+
 
 ### Running the Project
 
