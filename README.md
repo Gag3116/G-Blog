@@ -43,7 +43,7 @@ Key functionalities include:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd vue-blog
+   cd cs732-assignment-Gag3116
    ```
 3. Install dependencies:
    ```bash
