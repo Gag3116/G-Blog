@@ -1,0 +1,124 @@
+/* color palette from <https://github.com/vuejs/theme> */
+
+:root {
+  --vt-c-white: #f0f5ff;
+  --vt-c-white-soft: #dbe2f2;
+  --vt-c-white-mute: #c9d7ec;
+
+  --vt-c-black: #0e0e25;
+  --vt-c-black-soft: #1e1e3f;
+  --vt-c-black-mute: #22224e;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+
+  --button-color: hsla(210, 100%, 50%, 1); /* 明亮海蓝色 */
+  --button-hover-color: hsla(210, 100%, 40%, 1); /* 淡海蓝 */
+
+  --brand-color: hsla(210, 100%, 50%, 1); /* 明亮蓝色 */
+
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(200, 100%, 50%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(220, 100%, 50%, 0.2);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+
+    --button-color: hsla(220, 100%, 50%, 1); /* 深蓝色 */
+    --button-hover-color: hsla(230, 100%, 40%, 1); /* 深海蓝 */
+
+    --brand-color: hsla(210, 100%, 30%, 1); /* 深蓝色 */
+
+
+  }
+  a,
+  .green{
+    color: hsla(200, 100%, 35%, 1);
+  }
+  @media (hover: hover) {
+    a:hover {
+      background-color: hsla(200, 100%, 30%, 0.2);
+    }
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

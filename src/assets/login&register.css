@@ -1,0 +1,75 @@
+/* global-styles.css */
+@import './base.css';
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 4rem);
+}
+
+.login {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--color-background-mute);
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s; /* 平滑过渡颜色变化 */
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--color-text);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label, input, button, p {
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-text);;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: var(--button-color); /* 应用按钮背景颜色 */
+    color: var(--vt-c-white); /* 应用按钮文本颜色 */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p, .router-link {
+    text-align: center;
+    color: #666;
+}
+.router-link {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
